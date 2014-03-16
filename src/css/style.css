@@ -1,0 +1,187 @@
+body {
+    padding-top: 70px;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    margin-top: -6px;
+    margin-right: 8px;
+    margin-bottom: -11px;
+    float: left;
+}
+
+.navbar a i.glyphicon {
+    font-size: 12px;
+    margin-bottom: 1px;
+}
+
+.navbar .navbar-nav > li:not(.active) > a:hover,
+.navbar .navbar-nav > li:not(.active) > a:focus {
+    color: #555555;
+    background-color: #f2f2f2;
+    background-image: -webkit-linear-gradient(top, #f2f2f2 0%, #ebebeb 100%);
+    background-image: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffebebeb', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.jumbotron {
+    position: relative;
+    color: #fff;
+    background: #450f43;
+    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+/* Jumbotron pattern overlay
+------------------------- */
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron:after {
+    background: url("../img/grid-15px.png") repeat scroll center center transparent;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+}
+
+@media (min-width: 768px) {
+    .jumbotron.subhead {
+        padding: 30px 40px;
+        padding-bottom: 20px;
+    }
+    .jumbotron.subhead h1 {
+        font-size: 45px;
+    }
+    .jumbotron.subhead .lead {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .jumbotron.subhead {
+        padding: 24px 30px;
+        padding-bottom: 14px;
+    }
+}
+.jumbotron.subhead .lead {
+    margin-bottom: 10px;
+}
+.jumbotron.subhead h1 {
+    margin-top: 0;
+}
+
+
+code {
+   padding: 1px 4px;
+}
+
+.right-ref-link {
+    float: right;
+    margin-left: 8px;
+}
+
+.page-footer {
+    margin-bottom: 20px;
+}
+
+.page-header {
+    margin-top: 0;
+}
+
+.subnav-btn {
+    float: none !important;
+}
+
+.page-nav-pills > li > a {
+  position: relative;
+  display: block;
+  padding: 8px 14px;
+}
+
+.dropdown-menu > .active > a{
+    color: #333333;
+    background-color: #e6e6e6;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#eaeaea), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #eaeaea, 0%, #e6e6e6, 100%);
+    background-image: -moz-linear-gradient(top, #eaeaea 0%, #e6e6e6 100%);
+    background-image: linear-gradient(to bottom, #eaeaea 0%, #e6e6e6 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefefef', endColorstr='#ffe6e6e6', GradientType=0);
+}
+
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    background-color: #bcbcbc;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#cccccc), to(#bcbcbc));
+    background-image: -webkit-linear-gradient(top, #cccccc, 0%, #bcbcbc, 100%);
+    background-image: -moz-linear-gradient(top, #cccccc 0%, #bcbcbc 100%);
+    background-image: linear-gradient(to bottom, #cccccc 0%, #bcbcbc 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcccccc', endColorstr='#ffbcbcbc', GradientType=0);
+}
+
+.alert.alert-small {
+    padding: 5px 7px 4px 7px;
+}
+
+@media (min-width: 768px) {
+    .page-header h1 {
+        margin-top: 0 !important;
+    }
+}
+
+.marketing {
+    text-align: center;
+    color: #5a5a5a;
+}
+.marketing h1 {
+    margin: 60px 0 10px;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.marketing h2 {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+.marketing p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.marketing .marketing-byline {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #999;
+}
+.marketing img {
+    display: block;
+    margin: 0 auto 0px;
+}

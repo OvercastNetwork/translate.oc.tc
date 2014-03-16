@@ -1,0 +1,53 @@
+!!! 5
+%html
+    %head
+        %title Overcast Network - Translate
+        %meta{:"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
+        %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+        - @rand = SecureRandom.hex(13)
+        %link{:href => "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css", :rel => "stylesheet"}
+        %link{:href => "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css", :rel => "stylesheet"}
+        %link{:href => "/css/style.css?" + @rand, :rel => "stylesheet"}
+        %link{:href => "//oc.tc/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
+        %link{:href => "//oc.tc/favicon.ico", :rel => "apple-touch-icon", :type => "image/x-icon"}
+        %link{:href => "//fonts.googleapis.com/css?family=Lato:700,400,300", :rel => "stylesheet"}
+        %link{:href => "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css", :rel => "stylesheet", :type => 'text/css'}
+        %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"}
+        %script{:src => "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"}
+    %body
+        %header.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
+            .container
+                .navbar-header
+                    %a.navbar-brand{:href => "/"}
+                        %img{:src => "https://oc.tc/assets/logo.png"}
+                        Overcast Network
+                    %button.navbar-toggle{:type => "button", :"data-toggle" => "collapse", :"data-target" => ".navbar-main-collapse"}
+                        %span.sr-only Toggle navigation
+                        %span.icon-bar
+                        %span.icon-bar
+                        %span.icon-bar
+                %nav.collapse.navbar-collapse.navbar-main-collapse
+                    %ul.nav.navbar-nav.navbar-right
+                        %li.dropdown
+                            %a.dropdown-toggle{:href => "#", :"data-toggle" => "dropdown"}
+                                Language
+                                %b.caret
+                            %ul.dropdown-menu
+                                %li
+                                    %a{:href => "#"}
+                                        English
+                                %li
+                                    %a{:href => "#"}
+                                        German
+                                %li.divider
+                                %li
+                                    %a{:href => "#"}
+                                        Korean
+
+        = yield
+        .container
+            %hr
+            %footer.page-footer
+                %ul.nav.nav-pills
+                    %li.pull-left
+                        %a{:href => "https://oc.tc"} &copy; 2014 Overcast Network
