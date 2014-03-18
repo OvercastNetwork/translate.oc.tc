@@ -185,3 +185,7 @@ code {
     display: block;
     margin: 0 auto 0px;
 }
+
+.translate_text {
+    padding-bottom: 15px;
+}
