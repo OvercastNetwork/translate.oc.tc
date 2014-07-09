@@ -2,37 +2,32 @@
     %section
         .page-header
             %h1 Translate Overcast Network
-        
         .col-lg-6
             %section.translate_text
                 %p
                     Help translate Overcast Network to the languages of the world.
                 %p
                     Overcast Network uses
-                    %a{:href => "https://crowdin.net"}Crowdin 
+                    %a{:href => "https://crowdin.net", :target => "_blank"} Crowdin
                     to allow the community to translate the website and plugin to their languages. The goal of these translations is to support all the languages the community speaks, making Overcast Network easier and friendlier to use.
                 %p
                     You can help by creating a translation for your language or proofreading existing translations.
                 %p
                     Need help using crowdin? Visit the Crowdin
-                    %a{:href => "https://support.crowdin.net/843998-For-Translators"} For Translators
+                    %a{:href => "https://support.crowdin.net/843998-For-Translators", :target => "_blank"} For Translators
                     support page.
-
         .col-lg-6
             .col-sm-6.marketing
-                %img{:src => "./img/website.png"}
-                %h2 Website
-                %p
-                    The main Overcast Network website and all its pages.
-                
-                %p
-                    %a.btn.btn-default{:href => "#"} Translate »
-
-            .col-sm-6.marketing
-                %img{:src => "./img/plugins.png"}
+                %img{:src => "/img/plugins.png", :width => "240px"}
                 %h2 Plugins
+                %p The in-game status and information messages.
+
                 %p
-                    The in-game status and information messages.
-                
+                    %a.btn.btn-default{:href => "https://crowdin.net/project/ocn-plugins"} Translate »
+            .col-sm-6.marketing
+                %img{:src => "/img/website.png", :width => "240px"}
+                %h2 Website
+                %p The main Overcast Network website and all its pages.
+
                 %p
-                    %a.btn.btn-default{:href => "#"} Translate »
+                    %a.btn.btn-default.disabled{:href => "#"} Coming Soon
